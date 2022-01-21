@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Bahnschrift;
+  src: url("/MMM-Autobahn/BAHNSCHRIFT.TTF");
+}
+
+
+
+#road-sign {
+    font-weight: initial;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-family: Bahnschrift;
+    width: 40px;
+    background-image: url('/MMM-Autobahn/Autobahn_Frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.autobahn-report-element {
+    padding-bottom: 15px;
+}
+
+.autobahn-report-title {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.autobahn-report-subtitle {
+    margin: 0 10px;
+}
+
+.jam-length {
+    font-weight: 100;
+    font-size: 120%;
+}
+
+.jam-icon {
+    margin: 0 5px;
+    max-height: 0.9em;
+}
+
+.blocked {
+    font-weight: 400;
+}
