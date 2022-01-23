@@ -23,7 +23,6 @@ module.exports = NodeHelper.create({
             roadObject = roads[i];
 
             let warningUrl = `https://verkehr.autobahn.de/o/autobahn/${roadObject.road}/services/warning`
-            console.log(warningUrl);
 
             let response = JSON.parse(await this.doGetRequest(warningUrl));
 
@@ -47,7 +46,6 @@ module.exports = NodeHelper.create({
             });
         }
 
-        console.log(roadData);
         self.sendSocketNotification("AUTOBAHN_DATA", roadData);
     },
 
