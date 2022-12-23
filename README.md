@@ -5,7 +5,7 @@ MMM-Autobahn is a simple module which shows traffic-warnings on defined roads an
 
 ## Preview
 
-![Example](screenshot.jpg)
+![Example](screenshot2.jpg)
 
 ## Installation
 Go the modules folder of your Mirror
