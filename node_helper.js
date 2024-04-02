@@ -33,7 +33,7 @@ module.exports = NodeHelper.create({
                 warning.road = roadObject.road;
 
                 if (from && to) {
-                    let asNumbers = warning.title.match(/\(\d+\w*\)/g);
+                    let asNumbers = warning.title.match(/\d+\w*/g);
 
                     if (asNumbers.length == 0 || asNumbers.some(num => {
                         num = new Number(num.replace(/\D+/g, ''))
