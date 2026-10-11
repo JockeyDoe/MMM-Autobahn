@@ -1,39 +1,69 @@
 @font-face {
-  font-family: Bahnschrift;
-  src: url("/MMM-Autobahn/BAHNSCHRIFT.TTF");
+    font-family: Bahnschrift;
+    src: url("/MMM-Autobahn/BAHNSCHRIFT.TTF");
 }
 
+#autobahn {
+    max-width: 520px;
+    overflow: hidden;
+}
 
-
-#road-sign {
+.road-sign {
     font-weight: initial;
     color: #ffffff;
     display: inline-block;
     text-align: center;
     font-family: Bahnschrift;
     width: 45px;
-    background-image: url('/MMM-Autobahn/Autobahn_Frame.png');
+    background-color: #003399;
+    background-image:
+        url("/MMM-Autobahn/Autobahn_Frame.png");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    flex: 0 0 45px;
 }
 
 .autobahn-report-element {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
+    overflow: hidden;
 }
 
 .autobahn-report-title {
+    display: flex;
+    align-items: flex-start;
+
     font-weight: 700;
     color: #ffffff;
+
+    line-height: 1.15;
 }
 
 .autobahn-report-subtitle {
-    margin: 0 10px;
+    margin-left: 10px;
+    min-width: 0;
+}
+
+.autobahn-report-body {
+    margin-top: 4px;
+
+    font-size: 0.82em;
+    line-height: 1.18;
+
+    overflow: hidden;
+}
+
+.autobahn-description-line {
+    margin-bottom: 2px;
 }
 
 .jam-length {
+    margin-top: 3px;
+
     font-weight: 100;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .jam-icon {
@@ -42,5 +72,7 @@
 }
 
 .blocked {
-    font-weight: 400;
+    margin-top: 3px;
+
+    font-weight: 700;
 }
